@@ -1,0 +1,40 @@
+- name: mem
+  path: $.mem
+  labels:
+    environment: som # static label
+- name: mem_free
+  path: $.mem.free
+  labels:
+    environment: som 
+- name: heap_committed
+  path: $.heap.committed
+  labels:
+    environment: som
+- name: heap_init
+  path: $.heap.init
+  labels:
+    environment: som
+- name: heap_used
+  path: $.heap.used
+  labels:
+    environment: som
+- name: heap
+  path: $.heap
+  labels:
+    environment: som
+- name: nonheap_committed
+  path: $.nonheap.committed
+  labels:
+    environment: som
+- name: nonheap_init
+  path: $.nonheap.init
+  labels:
+    environment: som
+- name: nonheap_used
+  path: $.nonheap.used
+  labels:
+    environment: som
+- name: nonheap
+  path: $.nonheap
+  labels:
+    environment: som
