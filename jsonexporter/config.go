@@ -47,6 +47,27 @@ func loadConfig(configPath string) ([]*Config, error) {
 	return configs, nil
 }
 
+/*
+type ConfigForOP struct {
+	Message string `yaml:"message"`
+}
+
+
+func loadConfigInit(configPath string) *ConfigForOP {
+	data, err := ioutil.ReadFile(configPath)
+	//check(err)
+
+	var configs []*Config
+	//check(err)
+
+	endpointURL := configs[0].Labels["endpoint"]
+
+	var conf ConfigForOP
+	conf.Message = endpointURL
+
+	return &conf
+}*/
+
 func loadConfigInit(configPath string) (string, error) {
 	data, err := ioutil.ReadFile(configPath)
 	if err != nil {

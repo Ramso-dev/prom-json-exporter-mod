@@ -60,6 +60,8 @@ func Init(c *cli.Context, reg *harness.MetricRegistry) (harness.Collector, error
 		configInit = "config/configinit.yml"
 	)
 
+	//confManager := NewMutexConfigManager(loadConfigInit(configInit))
+
 	endpointURL, err := loadConfigInit(configInit)
 	if err != nil {
 		return nil, err
