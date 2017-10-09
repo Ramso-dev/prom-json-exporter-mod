@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: jsonexporter-config
 data:
-configinit.yml: |
+  configinit.yml: |
     - name: mem
       path: $.mem
       labels:
