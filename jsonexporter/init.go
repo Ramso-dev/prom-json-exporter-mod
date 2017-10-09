@@ -46,6 +46,8 @@ var ScrapeTypes = map[string]*ScrapeType{
 var DefaultScrapeType = "value"
 
 func Init(c *cli.Context, reg *harness.MetricRegistry) (harness.Collector, error) {
+
+	fmt.Println("Initializing...")
 	//args := c.Args()
 
 	/*if len(args) < 2 {
@@ -73,6 +75,8 @@ func Init(c *cli.Context, reg *harness.MetricRegistry) (harness.Collector, error
 	if err != nil {
 		return nil, err
 	}
+
+	fmt.Println("Endpoint config set to: " + endpoint)
 
 	scrapers := make([]JsonScraper, len(configs))
 	for i, config := range configs {

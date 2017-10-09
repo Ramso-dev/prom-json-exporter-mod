@@ -59,8 +59,8 @@ func (vs *ValueScraper) forTargetValue(data []byte, handle func(*jsonpath.Result
 }
 
 func (vs *ValueScraper) Scrape(data []byte, reg *harness.MetricRegistry) error {
-	fmt.Println("start")
-	fmt.Println(vs.valueJsonPath)
+
+	fmt.Println("metric ->", vs.valueJsonPath)
 
 	isFirst := true
 	return vs.forTargetValue(data, func(result *jsonpath.Result) {
@@ -87,8 +87,8 @@ func (vs *ValueScraper) Scrape(data []byte, reg *harness.MetricRegistry) error {
 		}
 
 		log.Debugf("metric updated;name:<%s>,labels:<%s>,value:<%.2f>", vs.Name, vs.Labels, value)
-		fmt.Println("metric updated;name:<%s>,labels:<%s>,value:<%.2f>", vs.Name, vs.Labels, value)
-		fmt.Println("_____________")
+		fmt.Printf("metric updated;name:<%s>,labels:<%s>,value:<%.2f>", vs.Name, vs.Labels, value)
+
 		reg.Get(vs.Name).(*prometheus.GaugeVec).With(vs.Labels).Set(value)
 	})
 }

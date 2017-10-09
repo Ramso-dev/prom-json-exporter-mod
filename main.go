@@ -12,4 +12,5 @@ func main() {
 	opts.Usage = "[OPTIONS] HTTP_ENDPOINT CONFIG_PATH"
 	opts.Init = jsonexporter.Init
 	harness.Main(opts)
+
 }
