@@ -56,8 +56,8 @@ func Init(c *cli.Context, reg *harness.MetricRegistry) (harness.Collector, error
 	}*/
 
 	var (
-		configPath = "config/config.yml"
-		configInit = "config/configinit.yml"
+		configPath = "etc/config/config.yml"
+		configInit = "etc/config/configinit.yml"
 	)
 
 	//confManager := NewMutexConfigManager(loadConfigInit(configInit))
