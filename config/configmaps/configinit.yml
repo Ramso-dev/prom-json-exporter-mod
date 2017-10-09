@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: jsonexporter-configinit
 data:
-configinit.yml: |
+  configinit.yml: |
     - name: endpointURL
       labels:
         endpoint: "http://localhost:3000/metrics" # static label
