@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: jsonexporter-configinit
+data:
+configinit.yml: |
+    - name: endpointURL
+      labels:
+        endpoint: "http://PROMETHEUS:Baqdt8mEh0T7NjdUBZsISAv8p5CY7Dwe@10.1.25.48:8080/metrics" # static label
+        # http://PROMETHEUS:Baqdt8mEh0T7NjdUBZsISAv8p5CY7Dwe@10.1.25.48:8080/metrics
+        # "http://localhost:3000/metrics"
+        
