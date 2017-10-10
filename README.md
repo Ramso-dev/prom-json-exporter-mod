@@ -1,3 +1,29 @@
+
+----------- Mod ------------
+
+```sh
+Set up:
+
+In Openshift:
+
+Dockerfile -> Interval
+config.yml -> Metrics to scrap/export
+configinit.yml -> Endpoint to scrap/export
+
+How to change configmaps:
+
+1 - create the configmaps with the raw links from folder configmaps
+2 - create volume. Notice that the working (see dockerfile) dir has to be used as path:
+oc volume dc/config --add --name=jsonex-config -m /go/src/Monitoring/prom-json-exporter-mod/config/ -t configmap --configmap-name=config
+3 - to update refresh the endpoint
+
+```
+
+
+
+
+
+----------- Original ------------
 prometheus-json-exporter
 ========================
 
