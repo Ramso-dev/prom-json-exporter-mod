@@ -56,7 +56,7 @@ func Init(c *cli.Context, reg *harness.MetricRegistry) (harness.Collector, error
 	}*/
 
 	var (
-		configPath = "config/config.yml"
+		configPath = "config/metrics/config.yml"
 		configInit = "config/configinit.yml"
 	)
 
