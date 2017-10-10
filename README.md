@@ -14,7 +14,7 @@ How to change configmaps:
 
 1 - create the configmaps with the raw links from folder configmaps
 2 - create volume. Notice that the working (see dockerfile) dir has to be used as path:
-oc volume dc/config --add --name=jsonex-config -m /go/src/Monitoring/prom-json-exporter-mod/config/ -t configmap --configmap-name=config
+oc volume dc/myappname --add --name=jsonexporter-configinit -m /go/src/Monitoring/prom-json-exporter-mod/config/ -t configmap --configmap-name=jsonexporter-configinit
 3 - to update refresh the endpoint
 
 ```
