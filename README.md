@@ -7,14 +7,15 @@ Set up:
 In Openshift:
 
 Dockerfile -> Interval
-config.yml -> Metrics to scrap/export
-configinit.yml -> Endpoint to scrap/export
+config/config.yml -> Metrics to scrap/export
+config/metrics/configinit.yml -> Endpoint to scrap/export
 
 How to change configmaps:
 
 1 - create the configmaps with the raw links from folder configmaps
 2 - create volume. Notice that the working (see dockerfile) dir has to be used as path:
 oc volume dc/myappname --add --name=jsonexporter-configinit -m /go/src/Monitoring/prom-json-exporter-mod/config/ -t configmap --configmap-name=jsonexporter-configinit
+oc volume dc/myappname --add --name=jsonexporter-config -m /go/src/Monitoring/prom-json-exporter-mod/config/metrics/ -t configmap --configmap-name=jsonexporter-config
 3 - to update refresh the endpoint
 
 ```
