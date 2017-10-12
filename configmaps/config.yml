@@ -44,3 +44,73 @@ data:
       path: $.nonheap
       labels:
         environment: som
+- name: counter_status_405_unmapped
+  path: $.counter.status.405.unmapped
+  labels:
+    environment: som
+- name: counter_status_200_tags_uuid
+  path: $.counter.status.200.tags.uuid
+  labels:
+    environment: som
+- name: counter_status_500_unmapped
+  path: $.counter.status.500.unmapped
+  labels:
+    environment: som
+- name: counter_status_403_metrics
+  path: $.counter.status.403.metrics
+  labels:
+    environment: som
+- name: counter_status_200_health
+  path: $.counter.status.200.health
+  labels:
+    environment: som
+- name: counter_status_200_swagger__resources
+  path: $.counter.status.200.swagger-resources
+  labels:
+    environment: som
+- name: counter_status_200_offerHistory_offer_offerUuid
+  path: $.counter.status.200.offerHistory.offer.offerUuid
+  labels:
+    environment: som
+- name: counter_status_304_star__star
+  path: $.counter.status.304.star-star
+  labels:
+    environment: som
+- name: counter_status_200_offers_uuid
+  path: $.counter.status.200.offers.uuid
+  labels:
+    environment: som
+    environment: som
+- name: counter_status_200_metrics
+  path: $.counter.status.200.metrics
+  labels:
+    environment: som
+- name: counter_status_200_star__star
+  path: $.counter.status.200.star-star
+  labels:
+    environment: som
+- name: counter_status_200_offers_ucid_ucid
+  path: $.counter.status.200.offers.ucid.ucid
+  labels:
+    environment: som
+- name: counter_status_200_swagger__resources_configuration_ui
+  path: $.counter.status.200.swagger-resources.configuration.ui
+  labels:
+    environment: som
+- name: counter_status_200_v2_api__docs
+  path: $.counter.status.200.v2.api-docs
+  labels:
+    environment: som
+- name: counter_status_200_notifications
+  path: $.counter.status.200.notifications
+  labels:
+    environment: som
+- name: counter_status_200_webjars_star__star
+  path: $.counter.status.200.webjars.star-star
+  labels:
+    environment: som
+- name: counter_status_200_piggyBackJson_uuid
+  path: $.counter.status.200.piggyBackJson.uuid
+  labels:
+    environment: som
+

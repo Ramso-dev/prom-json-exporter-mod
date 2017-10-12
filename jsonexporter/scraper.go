@@ -88,6 +88,7 @@ func (vs *ValueScraper) Scrape(data []byte, reg *harness.MetricRegistry) error {
 
 		log.Debugf("metric updated;name:<%s>,labels:<%s>,value:<%.2f>", vs.Name, vs.Labels, value)
 		fmt.Printf("metric updated;name:<%s>,labels:<%s>,value:<%.2f>", vs.Name, vs.Labels, value)
+		fmt.Println("")
 
 		reg.Get(vs.Name).(*prometheus.GaugeVec).With(vs.Labels).Set(value)
 	})
