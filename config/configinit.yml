@@ -1,6 +1,6 @@
 - name: endpointURL
   labels:
-    endpoint: "https://PROMETHEUS:Baqdt8mEh0T7NjdUBZsISAv8p5CY7Dwe@poi-som-dev.ocint.porscheinformatik.cloud/metrics" # static label
+    endpoint: "http://PROMETHEUS:Baqdt8mEh0T7NjdUBZsISAv8p5CY7Dwe@poi-som-dev.ocint.porscheinformatik.cloud/metrics" # static label
     # http://PROMETHEUS:Baqdt8mEh0T7NjdUBZsISAv8p5CY7Dwe@10.1.25.48:8080/metrics
     # "http://localhost:3000/metrics"
     
