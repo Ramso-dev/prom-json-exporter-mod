@@ -1,6 +1,6 @@
 - name: endpointURL
   labels:
-    endpoint: "http://PROMETHEUS:Baqdt8mEh0T7NjdUBZsISAv8p5CY7Dwe@10.1.24.131:8080/metrics" # static label
+    endpoint: "http://PROMETHEUS:Baqdt8mEh0T7NjdUBZsISAv8p5CY7Dwe@som-container-server.10-poi-som-dev.svc.cluster.local:8080/metrics" # static label
     # http://PROMETHEUS:Baqdt8mEh0T7NjdUBZsISAv8p5CY7Dwe@10.1.25.48:8080/metrics
     # "http://localhost:3000/metrics"
     
